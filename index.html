@@ -4,8 +4,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
 <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #486a6a;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #334d4d;
+	color: white;
+}
+
+.active {
+    background-color: #c2d6d6;
+	color: #486a6a;
+}
 
 div.container {
     width: 100%;
@@ -21,7 +54,7 @@ img {padding: 10px}
 header, footer {
     padding: 1em;
     color: white;
-    background-color: black;
+    background-color: #333;
     clear: left;
     text-align: center;
 }
@@ -41,8 +74,12 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }
-
+div.article{
+	padding: 13.9em;
+    overflow: hidden;
+}
 article {
+
     <!--margin-left: 150px;
     border-left: 1px solid gray;
     padding: 13.9em;
@@ -62,12 +99,21 @@ tr {
     <h1><b>VSCO WEBSITE</b></h1>
   <p>Welcome to our website <span>vsco</span></p>
 </header>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="na.html">Contact</a></li>
+</ul>
 
 
 <article>
 <div class="w3-display-middle w3-jumbo">
     <p>ini gambar vsco</p>
   </div>
+  
+  
+<div style=" padding-left: 1em;">
+<a href="addpost.html" class="fa fa-plus-square" style="font-size:30px;">	Add Picture</a>
+</div>
   
 <!-- First Photo Grid-->
   <div class="w3-row" id="myGrid" style="margin-bottom:128px">
